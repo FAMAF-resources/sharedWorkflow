@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.WORKFLOW_TOKEN }}
           submodules: recursive
       - name: Update submodules
         run: git submodule update --init --recursive --checkout -f --remote -- "${{github.event.client_payload.module}}"
