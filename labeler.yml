@@ -1,2 +1,2 @@
-documentation: docs/*
+documentation: docs/*, README.md
 exams: ExamenesViejos/*
