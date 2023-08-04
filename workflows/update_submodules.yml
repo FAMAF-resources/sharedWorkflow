@@ -1,16 +1,10 @@
 name: 'Update Submodule Action'
 on:
   repository_dispatch:
-    types: update
-  push:
-    branches:
-      - dev
-  pull_request:
-    branches:
-      - dev
+    types: famaftestupdate
 
 jobs:
-  update_submodules:
+  famaftestupdate:
     name: Update submodules
     runs-on: ubuntu-latest
     steps:
